@@ -171,6 +171,57 @@ main > section article {
     grid-column: span 4;
 }
 /* =========================
+   BADGES
+========================= */
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: var(--fonte-sm);
+    font-weight: bold;
+}
+
+.badge-projeto {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+.badge-voluntario {
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+}
+
+
+/* =========================
+   ALERTAS
+========================= */
+
+.alert {
+    padding: var(--espaco-2);
+    margin-bottom: var(--espaco-2);
+    border-radius: 6px;
+    border: 1px solid;
+}
+
+.alert-sucesso {
+    background-color: #E8F5E9;
+    border-color: var(--cor-sucesso);
+    color: var(--cor-sucesso);
+}
+
+.alert-erro {
+    background-color: #FFEBEE;
+    border-color: var(--cor-erro);
+    color: var(--cor-erro);
+}
+
+.alert-aviso {
+    background-color: #FFF8E1;
+    border-color: var(--cor-destaque);
+    color: #795548;
+}
+/* =========================
    RESPONSIVIDADE
 ========================= */
 
