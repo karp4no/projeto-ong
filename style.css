@@ -151,7 +151,25 @@ footer {
     text-align: center;
     padding: var(--espaco-3);
 }
+/* =========================
+   GRID PRINCIPAL
+========================= */
 
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--espaco-3);
+}
+
+/* Seções ocupam toda a largura */
+main > section {
+    grid-column: 1 / -1;
+}
+
+/* Cards organizados dentro da grade */
+main > section article {
+    grid-column: span 4;
+}
 /* =========================
    RESPONSIVIDADE
 ========================= */
@@ -170,6 +188,9 @@ footer {
 
 @media (max-width: 768px) {
     header {
+       main > section article {
+    grid-column: span 6;
+}
         flex-direction: column;
         gap: var(--espaco-2);
         text-align: center;
@@ -182,6 +203,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+   main > section article {
+    grid-column: 1 / -1;
+}
     main {
         padding: var(--espaco-3) var(--espaco-2);
     }
