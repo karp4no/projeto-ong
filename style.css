@@ -285,8 +285,8 @@ main > section article {
 }
 .toast {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 50px;
+    bottom: 150px;
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
     padding: var(--espaco-2);
