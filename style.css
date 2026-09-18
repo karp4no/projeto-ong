@@ -283,3 +283,14 @@ main > section article {
         max-width: 100px;
     }
 }
+.toast {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    padding: var(--espaco-2);
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
