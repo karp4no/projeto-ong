@@ -24,7 +24,7 @@ export function iniciarNavegacao() {
         conteudo.innerHTML = template();
     }
 
-    document.addEventListener("click", (evento) => {
+    function tratarNavegacao(evento) {
         const link = evento.target.closest("a");
 
         if (!link) return;
@@ -37,7 +37,9 @@ export function iniciarNavegacao() {
 
         history.pushState({}, "", url.pathname);
         renderizar(url.pathname);
-    });
+    }
+
+    document.addEventListener("click", tratarNavegacao);
 
     window.addEventListener("popstate", () => {
         renderizar(window.location.pathname);

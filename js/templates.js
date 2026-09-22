@@ -172,7 +172,7 @@ export function templateCadastro() {
             </p>
         </section>
 
-        <form action="#" method="post">
+        <form action="#" method="post" novalidate>
             <fieldset>
                 <legend>Dados pessoais</legend>
 
