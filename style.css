@@ -225,23 +225,23 @@ main > section article {
    RESPONSIVIDADE
 ========================= */
 
+/* Até 1440px: reduz a largura máxima do conteúdo */
 @media (max-width: 1440px) {
     main {
         max-width: 1100px;
     }
 }
 
+/* Até 1024px: reduz os espaçamentos laterais */
 @media (max-width: 1024px) {
     main {
         padding: var(--espaco-4) var(--espaco-2);
     }
 }
 
+/* Até 768px: header em coluna e cards em duas colunas */
 @media (max-width: 768px) {
     header {
-       main > section article {
-    grid-column: span 6;
-}
         flex-direction: column;
         gap: var(--espaco-2);
         text-align: center;
@@ -251,12 +251,18 @@ main > section article {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    main > section article {
+        grid-column: span 6;
+    }
 }
 
+/* Até 480px: cards ocupam toda a largura e navegação em coluna */
 @media (max-width: 480px) {
-   main > section article {
-    grid-column: 1 / -1;
-}
+    main > section article {
+        grid-column: 1 / -1;
+    }
+
     main {
         padding: var(--espaco-3) var(--espaco-2);
     }
@@ -274,6 +280,7 @@ main > section article {
     }
 }
 
+/* Até 320px: reduz fonte geral e tamanho da logo */
 @media (max-width: 320px) {
     body {
         font-size: var(--fonte-sm);
@@ -283,6 +290,7 @@ main > section article {
         max-width: 100px;
     }
 }
+
 .toast {
     position: fixed;
     right: 20px;
